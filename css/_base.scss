@@ -1,12 +1,8 @@
-.flex {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+p {
+    color: wheat;
 
-body {
-    @extend .flex;
-    flex-direction: column;
-    height: 100%;
+    &:hover{
+        color: red;
+    }
 }
 

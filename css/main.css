@@ -1,10 +1,7 @@
-.flex, body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+p {
+  color: wheat;
+  cursor: pointer;
 }
-
-body {
-  flex-direction: column;
-  height: 100%;
+p:hover {
+  color: red;
 }/*# sourceMappingURL=main.css.map */
