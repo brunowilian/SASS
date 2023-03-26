@@ -1,51 +1,12 @@
-/* $text-color:white;
-
-@mixin box-shadow($color) {
-    box-shadow: 3px 3px 4px 1px $color;
-}
-
-@mixin make-bold($val){
-    @if $val == danger {
-        font-weight: bold;
-        background-color: pink;
-    }
-    @else if $val == alert {
-        color: rgb(19, 240, 240);
-        background-color: rgba(199, 123, 136, 0.884);
-    }
-    @else {
-        color: black;
-        background-color: rgb(211, 171, 177);
-    }
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 body {
-
-    background-color: #832932;
-    color: $text-color;
+    @extend .flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-.container {
-
-
-    @include box-shadow(orange(0,0,0,0.6));
-    width: 200px;
-    height: 200px;
-    background-color: white;
-    $text-color2: orange;
-    @include make-bold(lds);
-
-    p{
-        color: blue;
-    }
-} */
-
-
-//
-
-
-$colors: (color1: blue, color2: red);
-
-@each $key, $color in $colors{
-    .#{$color}-text {color: darken($color, 0)}
-}
