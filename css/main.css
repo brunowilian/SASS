@@ -4,6 +4,10 @@ body {
 }
 
 .container {
+  box-shadow: 3px 3px 4px 1px orange(0, 0, 0, 0.6);
+  width: 200px;
+  height: 200px;
+  background-color: white;
   color: rgb(32, 250, 32);
 }
 .container p {

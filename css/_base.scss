@@ -1,13 +1,22 @@
 $text-color:white;
 
+@mixin box-shadow($color) {
+    box-shadow: 3px 3px 4px 1px $color;
+}
 
 body {
+
     background-color: #832932;
     color: $text-color;
 }
 
 .container {
 
+
+    @include box-shadow(orange(0,0,0,0.6));
+    width: 200px;
+    height: 200px;
+    background-color: white;
     $text-color2: orange;
     color: rgb(32, 250, 32);
 
