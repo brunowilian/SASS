@@ -1,4 +1,4 @@
-$text-color:white;
+/* $text-color:white;
 
 @mixin box-shadow($color) {
     box-shadow: 3px 3px 4px 1px $color;
@@ -38,4 +38,18 @@ body {
     p{
         color: blue;
     }
+} */
+
+
+//
+@for $i from 1 through 5 {
+    .text-#{$i} {
+        font-size: 15px * $i;
+    }
+}
+
+$colors: (color1: blue, color2: red);
+
+@each $key, $color in $colors{
+    .#{$color}-text {color: $color}
 }
