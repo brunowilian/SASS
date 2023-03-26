@@ -1,8 +1,2 @@
-$text-color:white;
+@use 'base';
 
-
-body {
-    background-color: #832932;
-    display: flex;
-    color: $text-color;
-}
